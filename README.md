@@ -85,47 +85,42 @@ with Spearman correlation:
 The findings suggest that repeated digital exposure creates stabilized phonetic expectations that may override local instructional variation.
 
 ---
-
 # 📊 Key Figures
 
 ## Phonetic Stabilization Models
-
 | Fig 1. Variability Decay | Fig 2. Saturation Curve | Fig 3. SD–TRI Dynamics |
 |:---:|:---:|:---:|
-| ![](sd_decay.png) | ![](saturation_curve.png) | ![](sd_tri_dynamics.png) |
+| ![](paper/sd_decay.png.png) | ![](paper/saturation_curve.png) | ![](paper/sd_tri_dynamics.png) |
 
 ---
 
 ## Digital Reinforcement Analysis
-
 | Fig 4. DFRI–TRI Correlation | Fig 5. DFRI Trend | Fig 6. DFRI Distribution |
 |:---:|:---:|:---:|
-| ![](dfri_scatter.png) | ![](dfri_line.png) | ![](dfri_by_level_box.png) |
+| ![](paper/dfri_scatter.png) | ![](paper/dfri_line.png) | ![](paper/dfri_by_level_box.png) |
 
 ---
 
 ## Conflict Zone Analysis
-
 | Fig 7. Kurtosis Comparison | Fig 8. Teacher–Media Divergence |
 |:---:|:---:|
-| ![](disney_vs_amy_kurtosis.png) | ![](disney_amy_teacher_conflict.png) |
+| ![](paper/disney_vs_amy_kurtosis.png) | ![](paper/disney_amy_teacher_conflict.png) |
 
 ---
 
 ## Conceptual & Developmental Framework
-
 | Fig 9. Acoustic Anchoring | Fig 10. Three‑Phase Model | Fig 11. Integrated Framework |
 |:---:|:---:|:---:|
-| ![](acoustic_anchoring_tri_flow.png) | ![](three_phase_stage.png) | ![](methodology_results_framework.png) |
+| ![](paper/acoustic_anchoring_tri_flow.png) | ![](paper/three_phase_stage.png) | ![](paper/methodology_results_framework.png) |
 
 ---
 
 ## Appendix Model
+| Fig 12. Lexical Growth Simulation |
+|:---:|
+| ![](paper/appendix_h_lexical_growth.png) |
 
-| |
-|---|
-| ![](paper/figures/appendix_h_lexical_growth.png) |
-| **Fig 12.** Lexical Growth Simulation |
+
 
 ---
 
