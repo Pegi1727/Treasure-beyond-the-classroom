@@ -56,7 +56,100 @@ The repository includes reproducible simulations for:
 
 All figures in the manuscript can be regenerated from the provided Python scripts.
 
+---# Beyond the Classroom  
+## How Digital Media Constructs Phonetic Expectations in a Young Bilingual Child
+
+![Status](https://img.shields.io/badge/Status-Research%20Complete-brightgreen)
+![Model](https://img.shields.io/badge/Statistical%20Correlation-ρ%20%3D%200.969-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-yellow)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
+
 ---
+
+## 📘 Abstract
+
+This study investigates how sustained exposure to digital media constructs phonetic expectation in a young bilingual child (“Treasure”).  
+Using longitudinal observation, acoustic modeling, and statistical correlation analysis, the research introduces three core constructs:
+
+- **Acoustic Anchoring**
+- **Digital Phonetic Reinforcement Index (DFRI)**
+- **Teacher Relief Index (TRI)**
+
+Results indicate a strong monotonic association between DFRI and TRI  
+with Spearman correlation:
+
+\[
+\rho = 0.969
+\]
+
+The findings suggest that repeated digital exposure creates stabilized phonetic expectations that may override local instructional variation.
+
+---
+
+# 📊 Key Figures
+
+## Phonetic Stabilizatio Models
+
+| | | |
+|---|---|---|
+| ![](paper/figures/sd_decay.png) | ![](paper/figures/saturation_curve.png) | ![](paper/figures/sd_tri_dynamics.png) |
+| **Fig 1.** Variability Decay | **Fig 2.** Saturation Curve | **Fig 3.** SD–TRI Dynamics |
+
+---
+
+## Digital Reinforcement Analysis
+
+| | | |
+|---|---|---|
+| ![](paper/figures/dfri_scatter.png) | ![](paper/figures/dfri_line.png) | ![](paper/figures/dfri_by_level_box.png) |
+| **Fig 4.** DFRI–TRI Correlation | **Fig 5.** DFRI Trend | **Fig 6.** DFRI Distribution |
+
+---
+
+## Conflict Zone Analysis
+
+| | |
+|---|---|
+| ![](paper/figures/disney_vs_amy_kurtosis.png) | ![](paper/figures/disney_amy_teacher_conflict.png) |
+| **Fig 7.** Kurtosis Comparison | **Fig 8.** Teacher–Media Divergence |
+
+---
+
+## Conceptual & Developmental Framework
+
+| | | |
+|---|---|---|
+| ![](paper/figures/acoustic_anchoring_tri_flow.png) | ![](paper/figures/three_phase_stage.png) | ![](paper/figures/methodology_results_framework.png) |
+| **Fig 9.** Acoustic Anchoring | **Fig 10.** Three‑Phase Model | **Fig 11.** Integrated Framework |
+
+---
+
+## Appendix Model
+
+| |
+|---|
+| ![](paper/figures/appendix_h_lexical_growth.png) |
+| **Fig 12.** Lexical Growth Simulation |
+
+---
+
+# 📂 Repository Structure
+
+``
+treasure-beyond-the-classroom/
+│
+├── paper/
+│   ├── manuscript.pdf
+│   ├── appendices/
+│   └── figures/
+│
+├── code/
+│   ├── dfri_model.py
+│   ├── tri_analysis.py
+│   └── lexical_growth_simulation.py
+│
+└── README.md
+
 
 ## 📂 Repository Structure
 
