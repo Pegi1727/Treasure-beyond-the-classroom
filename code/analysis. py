@@ -1,46 +1,35 @@
-import numpy as np
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from scipy.stats import spearmanr
+import os
 
-# 1. Data Simulation (Based on Research Parameters)
-np.random.seed(42)
-hours = np.linspace(0, 2000, 100)
-# Modeling DFRI (Digital Phonetic Reinforcement Index)
-dfri = 100 * (1 - np.exp(-hours/600)) + np.random.normal(0, 2, 100)
-# Modeling TRI (Teacher Relief Index)
-tri = 100 * np.exp(-hours/500) + np.random.normal(0, 2, 100)
+# 1. Load the Actual Dataset from the data folder
+data_path = 'data/dfri_dataset.csv'
 
-# 2. Statistical Analysis
-rho, p_val = spearmanr(dfri, tri)
-print(f"--- Research Statistics ---")
-print(f"Spearman Correlation (DFRI vs TRI): {rho:.3f}")
-print(f"P-value: {p_val:.4e}")
+if os.path.exists(data_path):
+    # Reading the CSV file we just created
+    df = pd.read_csv(data_path)
+    print("--- Dataset Loaded Successfully ---")
+    print(df.head()) # Shows the first few rows
+    
+    # 2. Statistical Analysis: Spearman Correlation
+    correlation = df['dfri_index'].corr(df['tri_index'], method='spearman')
+    print(f"\nCalculated Spearman Correlation: {correlation:.3f}")
 
-# 3. Generating Key Figures
-def save_research_plots():
-    # Plot 1: DFRI vs TRI Correlation
+    # 3. Visualization: Digital Reinforcement vs Teacher Relief
     plt.figure(figsize=(10, 6))
-    sns.regplot(x=dfri, y=tri, scatter_kws={'alpha':0.6}, line_kws={'color':'red'})
-    plt.title(f"Correlation Analysis: DFRI vs TRI (ρ = {rho:.3f})")
-    plt.xlabel("Digital Phonetic Reinforcement Index (DFRI)")
-    plt.ylabel("Teacher Relief Index (TRI)")
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.savefig("dfri_correlation_reproduced.png")
-    print("Saved: dfri_correlation_reproduced.png")
+    sns.regplot(data=df, x='dfri_index', y='tri_index', scatter_kws={'s': 100}, line_kws={'color':'red'})
+    
+    plt.title(f"Empirical Relationship: DFRI vs TRI (ρ = {correlation:.3f})", fontsize=14)
+    plt.xlabel("Digital Phonetic Reinforcement Index (DFRI)", fontsize=12)
+    plt.ylabel("Teacher Relief Index (TRI)", fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.6)
+    
+    # Save the output to figures folder
+    output_fig = "paper/figures/reproduced_correlation_analysis.png"
+    plt.savefig(output_fig)
+    print(f"\nAnalysis complete. Plot saved to: {output_fig}")
 
-    # Plot 2: Phonetic Variability Decay
-    variability = 0.8 * np.exp(-hours/400) + 0.1
-    plt.figure(figsize=(10, 5))
-    plt.plot(hours, variability, color='blue', linewidth=2)
-    plt.fill_between(hours, variability, color='blue', alpha=0.1)
-    plt.title("Phonetic Variability Decay Model")
-    plt.xlabel("Exposure Hours")
-    plt.ylabel("Standard Deviation (SD)")
-    plt.savefig("sd_decay_reproduced.png")
-    print("Saved: sd_decay_reproduced.png")
-
-if __name__ == "__main__":
-    save_research_plots()
-
+else:
+    print(f"Error: Data file not found at {data_path}. Please ensure the CSV is in the 'data' folder.")
