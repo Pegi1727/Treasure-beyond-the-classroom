@@ -88,39 +88,35 @@ The findings suggest that repeated digital exposure creates stabilized phonetic 
 
 # 📊 Key Figures
 
-## Phonetic Stabilizatio Models
+## Phonetic Stabilization Models
 
-| | | |
-|---|---|---|
-| ![](paper/figures/sd_decay.png) | ![](paper/figures/saturation_curve.png) | ![](paper/figures/sd_tri_dynamics.png) |
-| **Fig 1.** Variability Decay | **Fig 2.** Saturation Curve | **Fig 3.** SD–TRI Dynamics |
+| Fig 1. Variability Decay | Fig 2. Saturation Curve | Fig 3. SD–TRI Dynamics |
+|:---:|:---:|:---:|
+| ![](sd_decay.png) | ![](saturation_curve.png) | ![](sd_tri_dynamics.png) |
 
 ---
 
 ## Digital Reinforcement Analysis
 
-| | | |
-|---|---|---|
-| ![](paper/figures/dfri_scatter.png) | ![](paper/figures/dfri_line.png) | ![](paper/figures/dfri_by_level_box.png) |
-| **Fig 4.** DFRI–TRI Correlation | **Fig 5.** DFRI Trend | **Fig 6.** DFRI Distribution |
+| Fig 4. DFRI–TRI Correlation | Fig 5. DFRI Trend | Fig 6. DFRI Distribution |
+|:---:|:---:|:---:|
+| ![](dfri_scatter.png) | ![](dfri_line.png) | ![](dfri_by_level_box.png) |
 
 ---
 
 ## Conflict Zone Analysis
 
-| | |
-|---|---|
-| ![](paper/figures/disney_vs_amy_kurtosis.png) | ![](paper/figures/disney_amy_teacher_conflict.png) |
-| **Fig 7.** Kurtosis Comparison | **Fig 8.** Teacher–Media Divergence |
+| Fig 7. Kurtosis Comparison | Fig 8. Teacher–Media Divergence |
+|:---:|:---:|
+| ![](disney_vs_amy_kurtosis.png) | ![](disney_amy_teacher_conflict.png) |
 
 ---
 
 ## Conceptual & Developmental Framework
 
-| | | |
-|---|---|---|
-| ![](paper/figures/acoustic_anchoring_tri_flow.png) | ![](paper/figures/three_phase_stage.png) | ![](paper/figures/methodology_results_framework.png) |
-| **Fig 9.** Acoustic Anchoring | **Fig 10.** Three‑Phase Model | **Fig 11.** Integrated Framework |
+| Fig 9. Acoustic Anchoring | Fig 10. Three‑Phase Model | Fig 11. Integrated Framework |
+|:---:|:---:|:---:|
+| ![](acoustic_anchoring_tri_flow.png) | ![](three_phase_stage.png) | ![](methodology_results_framework.png) |
 
 ---
 
